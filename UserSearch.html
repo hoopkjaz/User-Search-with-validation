@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>User Search</h2>
+  <form name="searchForm" onsubmit="return validateForm()" action="" method="post">
+    <div class="form-group">
+        <label for="">First Name:</label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter fname" name="fname">
+        <div class="error" id="nameErr"></div>
+      </div>
+      <div class="form-group">
+        <label for="">AND Last Name:</label>
+        <input type="text" class="form-control" id="lname" placeholder="Enter lname" name="lname">
+      </div>
+    <div class="form-group">
+      <label for="email">OR Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <div class="error" id="emailErr"></div>
+    </div>   
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+<script src="///C:/Working/jsdev/FormValidation/validation.js"></script>
+</body>
+</html>
